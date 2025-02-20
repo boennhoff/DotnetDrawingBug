@@ -1,0 +1,16 @@
+<Project>
+
+	<PropertyGroup>
+		<Deterministic>true</Deterministic>
+		<ErrorReport>none</ErrorReport>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+		<LangVersion>12</LangVersion>
+		<Nullable>enable</Nullable>
+		<Platforms>x64</Platforms>
+		<SuppressTrimAnalysisWarnings>false</SuppressTrimAnalysisWarnings>
+		<UseArtifactsOutput>true</UseArtifactsOutput>
+		<UseVSHostingProcess>false</UseVSHostingProcess>
+	</PropertyGroup>
+
+</Project>

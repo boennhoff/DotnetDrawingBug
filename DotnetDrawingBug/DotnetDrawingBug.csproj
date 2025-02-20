@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<Copyright>Christian Bönnhoff</Copyright>
+		<Description>.NET PoC: Problem in System.Drawing</Description>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AssemblyTitle>DotnetDrawingBug</AssemblyTitle>
+		<OutputType>Exe</OutputType>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<UseWindowsForms>false</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- This version is not having any issue! -->
+		<!--<PackageReference Include="System.Drawing.Common" Version="8.0.8" />-->
+		<!-- This version is throwing a StackOverflowException -->
+		<PackageReference Include="System.Drawing.Common" Version="9.0.2" />
+		<PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
+	</ItemGroup>
+
+</Project>
